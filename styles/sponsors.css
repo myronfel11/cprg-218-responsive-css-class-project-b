@@ -1,15 +1,43 @@
 .sponsors {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
 }
 
 .sponsors-grid {
- 
+ display: grid;
+ grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .sponsor-card {
-  
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
 .sponsor-card img {
-  
+  width: 30%;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .sponsors-grid {
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr 1fr;
+   }
+
+   .sponsor-card img {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sponsors-grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 40%;
+   }
+
+   .sponsor-card img {
+    width: 100%;
+  }
 }
