@@ -1,23 +1,42 @@
 .register {
-
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
 .registration-form {
- 
+  display: grid;
 }
 
-.form-group {
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  margin-top: 12px;
+  margin-bottom: 5px; 
 }
 
 .form-group label {
-
+  text-align: left;
+  color: rgb(37, 37, 37);
 }
 
 .form-group input {
-  
+  height: 50px;
+  width: 500px;
+  border-color: lightgray;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1.5px;
 }
 
 .submit-button {
-  
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 505px;
+  background-color: rgb(3, 3, 133);
+  color: white;
 }
