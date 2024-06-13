@@ -1,15 +1,41 @@
 .schedule {
+    max-width: 100%;
+    margin: 100px auto;
+    background-image: linear-gradient(to bottom, #2f92ed, #b304d2, #ff79d9 );
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(117, 115, 115, 0.1);
+    text-align: center;
+    color: #ffffff;
+    
 
 }
 
 .schedule-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
 
 }
 
 .time-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   
 }
 
-.time-slot h3 {
-  
+.time-slot {
+    background-color: #ffffff;
+    color: rgb(2, 16, 136);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.time-slot p {
+    color: rgb(0, 0, 0);
 }
