@@ -15,6 +15,17 @@
     <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
     <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <title>Responsive CSS with Flexbox and Grid</title>
+    <script>
+      function onClickNavMobileButton() {
+        const navList = document.getElementById('nav-list-mobile');
+        if(navList.style.display=='flex'){
+          navList.style.display='none'
+        }else{
+          navList.style.display='flex'
+        }
+      }
+
+    </script>
   </head>
   <body>
     <section class="heading">
@@ -28,14 +39,16 @@
           <li class="nav-item"><a href="#sponsors">Sponsors</a></li>
         </ul>
         <!-- Use this nav list to display for mobile-->
-        <!-- <ul class="nav-list-mobile">
+        <ul class="nav-list-mobile" id="nav-list-mobile">
+          <!-- fa-reguler -->
           <li class="nav-item-mobile"><a href="#home"><i class="fa-regular fa-house"></i><i class="fa-regular fa-font-awesome"></i></a></li>
           <li class="nav-item-mobile"><a href="#speakers"><i class="fa-regular fa-people-group"></i></a></li>
           <li class="nav-item-mobile"><a href="#schedule"><i class="fa-regular fa-calendar-xmark"></i></a></li>
           <li class="nav-item-mobile"><a href="#register"><i class="fa-regular fa-address-card"></i></a></li>
           <li class="nav-item-mobile"><a href="#sponsors"><i class="fa-regular fa-money-bill-1"></i></a></li>
-        </ul> -->
+        </ul>
       </nav>
+      <div onclick="onClickNavMobileButton();" class="nav-item-mobile-button"><i class="fa-solid fa-bars"></i></div>
     </section>
     <section class="hero">
       <div class="hero-content">
