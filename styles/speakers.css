@@ -1,20 +1,51 @@
 .speakers {
- 
+    text-align: center;
+    background-color: #eee;
+    margin:1rem 0;
+    padding:3rem 1rem;
+}
+
+.speakers h2{
+    margin-bottom: 1rem;
 }
 
 .speakers-grid {
-  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .speaker-card {
-  
+    justify-items: center;
+    width:100%;
+    max-width: 1200px;
+    background:#ddd;
+    padding:1rem 1rem .75rem 1rem;
 }
 
 .speaker-card img {
-  
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius:5rem;
 }
 
-.speaker-card h3,
-.speaker-card p {
-  
+.speaker-card h3, .speaker-card p {
+  margin-bottom: 0.5rem;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .speakers-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .speakers-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
 }
