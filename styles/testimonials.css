@@ -1,14 +1,40 @@
 .testimonials {
+    background: url(/images/hero.jpg);
+    background-size: cover;
+}
+
+h2{
+    text-align: center;
+    padding-top: 30px;
 }
 
 .testimonials-grid {
+    display: grid;
+    margin: 20px;
+    grid-gap: 20px;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .testimonial-card {
+    display: flex;
+    background-color: white;
+    min-height: 200px;
+    max-height: 250px;
+    max-width: 300px;
+    margin: 15px;
+    flex-wrap: wrap;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: center;
 }
 
 .testimonial-card img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .testimonial-card p {
+    text-align: center;
 }
