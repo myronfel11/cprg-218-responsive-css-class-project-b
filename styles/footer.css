@@ -34,7 +34,37 @@
     font-size: 14px;
 }
 
-@media (min-width: 600px) {
+/* desktop */
+@media screen and (min-width: 1200px) {
+    .footer-content {
+        grid-template-columns: auto 1fr;
+        text-align: left;
+    }
+    .social-media {
+        margin-bottom: 0;
+    }
+    .footer-info {
+        justify-self: end;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-content {
+        grid-template-columns: auto 1fr;
+        text-align: left;
+    }
+    .social-media {
+        margin-bottom: 0;
+    }
+    .footer-info {
+        justify-self: end;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
     .footer-content {
         grid-template-columns: auto 1fr;
         text-align: left;
